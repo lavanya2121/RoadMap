@@ -1,0 +1,29 @@
+<!--Sidebar-->
+<ion-menu side="right" [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>
+                Side Menu
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+    
+    <ion-content  padding>
+        <ion-list>
+            <ion-item (click)="goToMyContact()">
+                My Contact 
+            </ion-item>
+            <ion-item (click)="goToHome()">
+                Home 
+            </ion-item>
+            <ion-item (click)="goToAboutUs()">
+                About us 
+            </ion-item>
+            <ion-item (click)="goToSignOut()">
+                Sign out 
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

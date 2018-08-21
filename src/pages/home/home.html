@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      </ion-buttons>
+      <!--Google maps-->
+      <ion-buttons end>
+        <!-- <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button> -->
+      </ion-buttons> 
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-title *ngIf="!isSeachbarOpened">Home</ion-title>
+    <ion-searchbar *ngIf="isSeachbarOpened" showCancelButton="true" (search)="onSearch($event)" (ionCancel)="isSeachbarOpened=false"></ion-searchbar>
+    <ion-buttons end>
+      <button ion-button icon-only *ngIf="!isSeachbarOpened" (click)="isSeachbarOpened=true">
+       <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    <!--For Google map--> 
+    <div #map id="map"></div> 
+   
+</ion-content>
+
+<!-- <ion-footer>
+  <button ion-button color="light" full (click)="testMarker()">Test Marker</button>
+</ion-footer> -->

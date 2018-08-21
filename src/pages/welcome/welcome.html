@@ -1,0 +1,43 @@
+
+
+<ion-content padding id="welcome">
+ 
+  <div class="row row-center">
+    <div class="col text-center">
+      <ion-img width="150" height="150" src="assets/imgs/bniinspire2121.jpg"></ion-img>
+    </div>
+  </div>
+
+  <div class="row row-center">
+    <div class="col text-center">
+      <ion-input type="text" placeholder="Enter your Email Id!!"></ion-input>
+    </div>
+  </div>
+
+  <div class="row row-center">
+    <div class="col text-center">
+      <ion-input type="password" placeholder="Enter your Password!!"></ion-input>
+    </div>
+  </div>
+
+  <div class="row row-center padding">
+      <div class="col text-center">
+          <button color="darkred" ion-button block (click)="login()">LOGIN</button>
+      </div>
+    </div>
+
+    <div class="row row-center padding-bottom">
+        <div class="col text-center">
+             <!-- <a href=""><strong>Forgot Password?</strong></a> -->
+             <strong (click)="forgotPassword()">Forgot Password?</strong>
+        </div>
+      </div>
+
+      
+    <div class="row row-center">
+        <div class="col text-center">
+          <strong (click)="register()">Not a member yet? Register now!!</strong> 
+        </div>
+      </div>
+      
+</ion-content>

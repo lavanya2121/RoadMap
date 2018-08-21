@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.gani",
+  "appName": "gani",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

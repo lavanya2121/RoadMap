@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-buttons>
+      <ion-title>My Contact</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+<!-- <h3>MY ACCOUNT</h3> -->
+<div class="row row-center">
+  <div class="col text-center">
+    <h3>MY ACCOUNT</h3>
+  </div>
+  </div>
+<ion-list>
+  <ion-item>{{ mycontact.email }}</ion-item>
+  <ion-item>{{ mycontact.name }}</ion-item>
+  <ion-item>{{ mycontact.phone }}</ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,43 @@
+page-welcome {
+
+    #welcome{
+       background: color($colors,energy) 
+    }
+
+    .text-center{
+        text-align: center;
+    }
+    
+    ion-input{
+        border-bottom:1px solid maroon;
+    }
+
+    ion-button{
+        color:maroon;
+        padding-bottom:30px;
+    }
+
+    a{
+        font-size: 80px solid bold;
+        color:red;
+        font-style: italic;
+        font-family:cursive;
+        padding-bottom:80px;
+    }
+
+    
+        
+ion-img {
+    display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+    background: none;
+    padding-top:20px;
+    //contain: strict;
+}
+
+
+
+    
+
+}
